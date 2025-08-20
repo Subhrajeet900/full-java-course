@@ -1,0 +1,3 @@
+// time and space ......
+// time complexity->
+//     relation between input size and running time (operational)
