@@ -78,5 +78,37 @@ public class MatrixMultiplication {
     }
 }
 
+// multiply a matrix by x number , like ( 1/2 )  
 
+public class ScalarMultiplication {
+    public static void main(String[] args) {
+        // A 3x3 matrix
+        int[][] matrix = {
+            {2, 4, 6},
+            {8, 10, 12},
+            {14, 16, 18}
+        };
 
+        // Scalar value (like 1/2)
+        double scalar = 0.5;  // same as 1/2
+
+        // Resultant matrix
+        double[][] result = new double[3][3];
+
+        // Multiplying the matrix by scalar
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                result[i][j] = matrix[i][j] * scalar;
+            }
+        }
+
+        // Printing the result
+        System.out.println("Matrix after multiplying by " + scalar + ":");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(result[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
